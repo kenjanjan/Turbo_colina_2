@@ -1,9 +1,14 @@
 {
-  "name": "docs",
+  "name": "@repo/fe",
   "version": "1.0.0",
   "private": true,
+  "exports": {
+    ".": {
+      "import": "./src/app/index.ts"
+    }
+  },
   "scripts": {
-    "dev": "next dev --port 3001",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

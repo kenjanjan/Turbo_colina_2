@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Button from "@repo/ui/button";
 import React, { useEffect } from "react";
 import { Page as FEService } from "@repo/fe";
@@ -10,7 +10,10 @@ function Body(): React.ReactElement {
 
   useEffect(() => {
     // Initialize the theme from local storage
-    const storedTheme = localStorage.getItem("theme") as "dark" | "light" | "dim";
+    const storedTheme = localStorage.getItem("theme") as
+      | "dark"
+      | "light"
+      | "dim";
     if (storedTheme) {
       setTheme(storedTheme);
     }
@@ -43,9 +46,7 @@ function Body(): React.ReactElement {
   };
 
   return (
-    <main
-      className="flex flex-col dim:bg-gray-200 items-center justify-between"
-    >
+    <main className="flex flex-col dim:bg-gray-200 items-center justify-between">
       <h1>web</h1>
       <Button className="bg-red-500 text-white" text="web button" />
       <FEService />

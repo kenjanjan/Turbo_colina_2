@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 
 // We want each package to be responsible for its own content.
 const config: Omit<Config, "content"> = {
+  darkMode: "class",
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
     "../../packages/ui/**/*.{js,ts,jsx,tsx}",
@@ -14,6 +15,11 @@ const config: Omit<Config, "content"> = {
         logo: "0px 1px 9.38px 0px rgba(0, 0, 0, 0.2)",
       },
       colors: {
+        dim: {
+          DEFAULT: '#777', // Define dim colors here
+          100: '#999',     // Lighter dim
+          200: '#555',     // Darker dim
+        },
         "primary-mint": {
           50: "#F6FEFF",
           100: "#B0E9ED",

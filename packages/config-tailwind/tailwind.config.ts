@@ -1,8 +1,7 @@
 import type { Config } from "tailwindcss";
-
 // We want each package to be responsible for its own content.
 const config: Omit<Config, "content"> = {
-  darkMode: "class",
+  darkMode: "selector",
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
     "../../packages/ui/**/*.{js,ts,jsx,tsx}",
@@ -10,15 +9,15 @@ const config: Omit<Config, "content"> = {
   theme: {
     extend: {
       boxShadow: {
-        input: "0px 1px 5px 0px rgba(0, 124, 133, 0.1)",
+        box: "0px 1px 5px 0px rgba(0, 124, 133, 0.1)",
         "text-logo": "0px 1px 5px 0px rgba(0, 0, 0, 0.3)",
         logo: "0px 1px 9.38px 0px rgba(0, 0, 0, 0.2)",
       },
       colors: {
         dim: {
-          DEFAULT: '#777', // Define dim colors here
-          100: '#999',     // Lighter dim
-          200: '#555',     // Darker dim
+          DEFAULT: "#777", // Dim base color
+          100: "#999", // Lighter dim
+          200: "#03595B", // Darker dim
         },
         "primary-mint": {
           50: "#F6FEFF",
@@ -109,6 +108,13 @@ const config: Omit<Config, "content"> = {
       },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      backgroundColor: ["dim"], // Add 'dim' as a variant for background color
+    },
+  },
+  plugins: [
+
+  ],
 };
 export default config;

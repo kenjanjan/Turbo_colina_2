@@ -3,8 +3,10 @@ import Body from "../../components/body";
 
 export default function Page(): JSX.Element {
   return (
-    <ThemeProvider>
-      <Body />
-    </ThemeProvider>
+    <div className="p-24">
+      <ThemeProvider>
+        <Body />
+      </ThemeProvider>
+    </div>
   );
 }

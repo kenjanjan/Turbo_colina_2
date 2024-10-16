@@ -17,7 +17,7 @@
     "node": ">=18"
   },
   "name": "with-tailwind",
-  "packageManager": "npm@10.8.2",
+  "packageManager": "yarn@1.22.22",
   "workspaces": [
     "apps/*",
     "packages/*"

@@ -12,7 +12,10 @@
     "./card": "./src/card.tsx",
     "./button": "./src/button.tsx",
     "./tenant-container": "./src/tenant-container.tsx",
-    "./theme-context": "./theme-context.tsx"
+    "./theme-context": "./theme-context.tsx",
+"./assets/hero-section-dark.png": "./dist/assets/hero-section-dark.png",
+  "./assets/hero-section-dim.png": "./dist/assets/hero-section-dim.png",
+  "./assets/hero-section-light.png": "./dist/assets/hero-section-light.png"
   },
   "license": "MIT",
   "scripts": {

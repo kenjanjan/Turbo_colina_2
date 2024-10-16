@@ -9,7 +9,8 @@ const config: Omit<Config, "content"> = {
   theme: {
     extend: {
       boxShadow: {
-        box: "0px 1px 5px 0px rgba(0, 124, 133, 0.1)",
+        input: "0px 1px 5px 0px rgba(0, 124, 133, 0.1)",
+        box: "0px 1px 5px 0px rgba(0, 0, 0, 0.05)",
         "text-logo": "0px 1px 5px 0px rgba(0, 0, 0, 0.3)",
         logo: "0px 1px 9.38px 0px rgba(0, 0, 0, 0.2)",
       },
@@ -113,8 +114,6 @@ const config: Omit<Config, "content"> = {
       backgroundColor: ["dim"], // Add 'dim' as a variant for background color
     },
   },
-  plugins: [
-
-  ],
+  plugins: [],
 };
 export default config;
